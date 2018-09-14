@@ -1,0 +1,75 @@
+/*global styles */
+*{    
+    margin: 0px;
+    padding: 0px;  
+    font-family: Roboto, Arial, sans-serif;
+}
+/* colorful background */
+body{
+     
+     background-color: #f2f2f2;
+}
+ /* colourful #app-bar */
+
+.app-bar{
+    background-color: #00796B;
+    color: #FFFFFF;
+}
+#tap-bar{
+    background-color: #FFFFFF;
+    padding-left: 40px;
+    text-transform: uppercase;
+    color: #f2f2f2; /* change the color of my button contents*/
+    text-align: center;
+    font-size: 13px;
+    border: none;
+}
+#tap-bar  button{
+    background-color: #4CAF50;
+    text-align: center;
+    height: 72px;
+    width: 33%;
+}
+button{
+    background-color: #4CAF50;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+/* colorful #channel and chat */
+#channels{
+    background-color: #FFFFFF;
+}
+#channels ul{
+    list-style-type: none;
+    padding: 16px;
+    font-size: 16px;
+}
+h3 {
+    font-size: medium;
+}
+strong{
+    text-transform: uppercase;
+}
+#own{
+    margin-left: 17.5%;
+}
+.mssg-container  {
+    width: 80%;
+    font-size: medium;
+    margin-bottom: 8px;
+    margin-left: 2.5%;
+    color: black;
+}
+.mssg-container a {
+    font-size: medium;
+    color: black;
+}
+em {        
+    font-style: normal;
+    font-size: larger;
+}
+p{
+    background-color: #FFFFFF;
+    padding: 16px;
+}
