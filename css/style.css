@@ -1,49 +1,69 @@
 /*global styles */
-*{    
+* {    
     margin: 0px;
     padding: 0px;  
     font-family: Roboto, Arial, sans-serif;
 }
 /* colorful background */
-body{
+body {
      
-     background-color: #f2f2f2;
+     background-color: #f5f5f5;
 }
  /* colourful #app-bar */
 
-.app-bar{
+.app-bar {
     background-color: #00796B;
-    color: #FFFFFF;
-}
-#tap-bar{
-    background-color: #FFFFFF;
-    padding-left: 40px;
-    text-transform: uppercase;
-    color: #f2f2f2; /* change the color of my button contents*/
-    text-align: center;
-    font-size: 13px;
-    border: none;
-}
-#tap-bar  button{
-    background-color: #4CAF50;
-    text-align: center;
-    height: 72px;
-    width: 33%;
-}
-button{
-    background-color: #4CAF50;
-    text-align: center;
-    text-transform: uppercase;
-    
+    color: rgb(255, 255, 255);
 }
 /* colorful #channel and chat */
-#channels{
-    background-color: #FFFFFF;
-}
-#channels ul{
+#channels ul { 
+    background-color: rgb(255, 255, 255);
     list-style-type: none;
+}
+ /* channel tile geometry */
+#channels ul li { 
+    box-sizing: border-box;
+    height: 48px;
     padding: 16px;
     font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #F5F5F5;
+}
+/* active #channel is #highlighted */
+#channels li.selected {
+    color: rgb(164, 206, 67);
+    border-left: 4px solid rgb(164, 206, 67);
+}
+/* middle vertical alignment of icons in the channels list */
+li img { 
+    vertical-align: middle;
+}
+/* tab bar */
+#tap-bar {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+/* add styles to tab-bar buttons */
+#tap-bar button {
+    background-color: rgb(255, 255, 255);
+    height: 72px;
+    width: 33%;
+    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 16px;
+
+}
+/* tab-bar buttons do have a line-break and images are centered due to the left&right auto margin */
+#tap-bar button img {
+    display: block;
+    margin: 0 auto 4px auto;
+    color: rgb(164, 206, 67);
+}
+/* the selected tab-bar #button is highlighted */
+#tap-bar button.selected {
+    color: rgb(164, 206, 67);
+    border-bottom: 4px solid rgb(164, 206, 67);
 }
 h3 {
     font-size: medium;
@@ -51,7 +71,15 @@ h3 {
 strong{
     text-transform: uppercase;
 }
-#own{
+em {        
+    font-style: normal;
+    font-size: larger;
+}
+p{
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+}
+.mssg-container.own{
     margin-left: 17.5%;
 }
 .mssg-container  {
@@ -59,17 +87,12 @@ strong{
     font-size: medium;
     margin-bottom: 8px;
     margin-left: 2.5%;
+}
+.mssg-container button {
+    background-color: rgb(164, 206, 67);
     color: black;
+    text-transform: uppercase;
 }
 .mssg-container a {
-    font-size: medium;
     color: black;
-}
-em {        
-    font-style: normal;
-    font-size: larger;
-}
-p{
-    background-color: #FFFFFF;
-    padding: 16px;
 }
